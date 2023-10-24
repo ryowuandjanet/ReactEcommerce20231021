@@ -48,6 +48,9 @@ function MyState(props) {
     try {
       await addDoc(productRef, products)
       toast.success("Product Add successfully")
+      setTimeout(() => {
+        window.location.href='/dashboard'
+      },800)
       getProductData()
       closeModal()
       setLoading(false)
@@ -57,6 +60,7 @@ function MyState(props) {
     }
     setProducts("")
   }
+
 
   const [product, setProduct] = useState([]);
 
