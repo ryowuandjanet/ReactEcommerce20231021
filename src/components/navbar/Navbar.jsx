@@ -69,7 +69,7 @@ export default function Navbar() {
                     </Link>
                   </div>
 
-                  {user?.user?.email === 'knupadhyay784@gmail.com' ? <div className="flow-root">
+                  {user?.user?.email === 'ryowu@gmail.com' ? <div className="flow-root">
                     <Link to={'/dashboard'} className="-m-2 block p-2 font-medium text-gray-900" style={{ color: mode === 'dark' ? 'white' : '', }}>
                       admin
                     </Link>
